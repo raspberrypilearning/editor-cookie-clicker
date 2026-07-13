@@ -1,27 +1,29 @@
-## Animate the equipment
+## Make every click worth more
 
-Make your equipment wiggle so the shop feels alive.
+Set up the number that decides how much each click is worth.
 
-> [!TASK]
->
-> Add this script to your first piece of equipment. It rocks the sprite back and forth forever.
->
-> ```blocks3
-> when green flag clicked
-> forever
-> turn right (10) degrees
-> wait (0.05) seconds
-> turn left (10) degrees
-> wait (0.05) seconds
-> turn left (10) degrees
-> wait (0.05) seconds
-> turn right (10) degrees
-> wait (0.05) seconds
-> end
-> ```
+![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 
-> [!TASK]
->
-> Add the same script to your other equipment sprites by dragging it onto each one in the sprite list.
+## Step 1
 
-Click the green flag. Your equipment rocks gently from side to side.
+Make a variable called `pizzas per click`{:class="block3variables"}.
+
+This is how many pizzas one click makes.
+
+## Step 2
+
+Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a click always makes at least one pizza.
+
+```blocks3
+when green flag clicked
+set [pizzas v] to (0)
++set [pizzas per click v] to (1)
+```
+
+## Tip
+
+All the changing information a game remembers, like scores, prices, and upgrades, is called the **game state**.
+
+Nothing changes in the game yet.
+
+You'll put this number to work on your pizza next.

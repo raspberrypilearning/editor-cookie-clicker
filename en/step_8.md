@@ -1,29 +1,20 @@
-## Animate the auto-clickers
+## Spend the multiplier
 
-Give your helpers a gentle pulse so they look busy at work.
+Make each click use your new number instead of a fixed `1`.
 
-> [!TASK]
->
-> Add this script to your first helper. It grows the sprite a little, then shrinks it back, over and over.
->
-> ```blocks3
-> when green flag clicked
-> forever
-> repeat (5)
->   change size by (2)
->   wait (0.05) seconds
-> end
-> repeat (5) times
-> wait (0.05) seconds
-> change size by (-2)
-> end
-> end
-> ```
+![the pizza sprite](images/pizza.png)
 
-> [!TASK]
->
-> Add the same script to your other helper by dragging it onto them in the sprite list.
+On your pizza sprite, change the click script to add `pizzas per click`{:class="block3variables"} instead.
 
-Click the green flag. Your helpers pulse away while they make pizzas. Your pizza shop is complete.
+```blocks3
+when this sprite clicked
+start sound (Tennis Hit v)
++change [pizzas v] by (pizzas per click)
+change size by (10)
+wait (0.05) seconds
+change size by (-10)
+```
 
-> [!SAVE]
+Nothing changes yet, because `pizzas per click`{:class="block3variables"} is still `1`.
+
+The equipment you add next will raise it.

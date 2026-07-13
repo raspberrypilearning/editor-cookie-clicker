@@ -1,21 +1,27 @@
-## What you will make
+## Make the clicker
 
-You're going to build a **pizza clicker**: a game where you tap a pizza to make more pizzas, spend those pizzas on shiny equipment so every click is worth more, and hire helpers who keep cooking even when you take a break. Games like this are called **idle** or **endless clicker** games, and the fun comes from watching your numbers climb faster and faster.
+The starter project is open in the editor beside these instructions, with all the sprites and backdrops you'll need.
 
-> [!NOPRINT]
->
-> <div class="scratch-preview">
->  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1361881665/?autostart=false" frameborder="0"></iframe>
-> </div>
+Start by swapping the cat for something to click.
 
-> [!PRINTONLY]
->
-> ![The finished pizza shop: readouts top-left, chef and granny on the right, and equipment along the bottom.](images/finished-project.png)
+![the pizza sprite](images/pizza.png)
 
+## Step 1
 
-Play the example to see where you're heading. Yours doesn't have to look the same: you'll choose your own thing to click, your own equipment, and your own helpers as you go.
+Delete the cat sprite.
 
-### You will need:
+![Deleting a sprite with the bin icon on its thumbnail.](images/delete-sprite.png)
 
-- The Scratch editor, either [online](https://scratch.mit.edu/projects/editor/) or the offline app
-- A new Scratch project (the one that opens with the cat is fine)
+## Step 2
+
+Add your own sprite with **Choose a Sprite** (library, **Upload**, or **Paint**).
+
+The pizza shop uses a pizza.
+
+Use your own sprite, or save [the pizza sprite](images/pizza.png) and import it with **Upload**.
+
+![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
+
+Your pizza doesn't do anything when you click it yet.
+
+You'll make it count your clicks next.

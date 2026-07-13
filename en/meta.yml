@@ -1,4 +1,4 @@
-title: Pizza Party 
+title: Pizza Shop
 hero_image: images/banner.png
 description: >-
   Build your own endless clicker game. Click to make pizzas, buy equipment so
@@ -6,16 +6,37 @@ description: >-
 listed: false
 pdf: false
 steps:
-  - title: What you will make
   - title: Make the clicker
+  - title: Count your clicks
     completion:
       - engaged
-  - title: Add equipment
-  - title: Add auto-clickers
+  - title: Add a click sound
+  - title: Make the pizza bounce
+  - title: Set up winning
+  - title: Reset the score
+  - title: Make every click worth more
+  - title: Spend the multiplier
+  - title: Add your first equipment
+  - title: Show the cutter when affordable
+  - title: Buy the cutter
+  - title: Add more equipment
+  - title: Win only when fully equipped
+  - title: Hire a robot chef
+  - title: Make the helper variables
+  - title: Buy a chef
+  - title: Show the chef when affordable
+  - title: Count the pizzas per second
+  - title: Ask for a recount
+  - title: Start the clock
   - title: Add a second helper
+  - title: Make the granny variables
+  - title: Wire up the granny
+  - title: Make grannies worth more
+  - title: Give the grannies a price
     completion:
       - internal
-  - title: Add a backdrop
+  - title: Paint a shop backdrop
+  - title: Arrange your shop
     completion:
       - external
   - title: Animate the equipment

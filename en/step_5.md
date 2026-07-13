@@ -1,86 +1,39 @@
-## Add a second helper
+## Set up winning
 
-Add a second, more powerful helper that makes more pizzas per second than the first.
+Lock the pizza in place, then decide when the player has won.
 
-> [!TASK]
->
-> Add another helper sprite. The pizza shop uses a granny, because grannies are pizza pros.
->
-> Use your own helper, or save [the granny sprite](images/granny.png) and import it with **Upload**.
->
-> ![The pizza shop's granny.](images/granny.png)
+![the pizza sprite](images/pizza.png)
 
-> [!TASK]
->
-> Copy your chef's two scripts onto the new sprite: drag each script from the code area and drop it onto the new sprite in the sprite list.
->
-> > [!NOPRINT]
-> >
-> > ![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
+## Step 1
 
-> [!TASK]
->
-> Make a variable called `grannies`{:class="block3variables"} for how many you've hired.
+Start a new script.
 
-> [!TASK]
->
-> Make a variable called `granny price`{:class="block3variables"} for how many pizzas the next one costs.
+On the green flag, set the sprite to `not draggable`{:class="block3sensing"} so the player clicks it instead of accidentally dragging it around the stage.
 
-> [!TASK]
->
-> In the copied buy script, swap the chef variables for the granny ones and pick a different sound.
->
-> ```blocks3
-> when this sprite clicked
-> start sound (Collect v)
-> change [pizzas v] by ((0) - (granny price))
-> change [grannies v] by (1)
-> set [granny price v] to (round ((granny price) * (1.15)))
-> ```
+```blocks3
+when green flag clicked
+set drag mode [not draggable v]
+```
 
-> [!TASK]
->
-> Swap the variables in the copied appear script too.
->
-> ```blocks3
-> when green flag clicked
-> set drag mode [not draggable v]
-> forever
-> if <(pizzas) > ((granny price) - (1))> then
-> show
-> else
-> hide
-> end
-> broadcast (update v)
-> end
-> ```
+## Step 2
 
-> [!TASK]
->
-> Make each granny worth `5` a second. On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
->
-> ```blocks3
-> define update pizzas per second
-> +set [pizzas per second v] to (((chefs) * (1)) + ((grannies) * (5)))
-> ```
+Add the **win condition** to the same script.
 
-> [!TASK]
->
-> Give the new variables their starting values on the Stage's green flag. A granny starts at `100` pizzas, pricier than a chef because she works harder.
->
-> ```blocks3
-> when green flag clicked
-> set [pizzas v] to (0)
-> set [pizzas per click v] to (1)
-> set [chefs v] to (0)
-> set [chef price v] to (15)
-> +set [grannies v] to (0)
-> +set [granny price v] to (100)
-> update pizzas per second
-> forever
-> wait (1) seconds
-> change [pizzas v] by (pizzas per second)
-> end
-> ```
+It waits until the score is high enough, then celebrates.
 
-Buy chefs, then save for a granny and watch your pizzas-per-second jump. You now have a full endless clicker: clicks, upgrades, and helpers all working together.
+```blocks3
+when green flag clicked
+set drag mode [not draggable v]
++wait until <(pizzas) > (10000)>
++start sound (Win v)
++say [You Win!] for (2) seconds
++stop [all v]
+```
+
+## Tip
+
+A **win condition** is the rule that decides when a player has completed or won a game.
+
+You won't win yet.
+
+That takes 10,000 pizzas, and you'll add faster ways to earn them soon.

@@ -1,4 +1,4 @@
 name: "editor-cookie-clicker-complete"
 identifier: "editor-cookie-clicker-complete"
 type: 'scratch'
-build: false
+build: true

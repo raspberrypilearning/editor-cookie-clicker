@@ -1,25 +1,21 @@
 ## Add a second helper
 
-A second, more powerful helper makes even more pizzas per second.
+Add a more powerful helper that will make five pizzas per second instead of one.
 
-![The pizza shop's granny.](images/granny.png)
+![The example project's granny.](images/granny.png)
 
 ## Step 1
 
-Add another helper sprite.
-
-The pizza shop uses a granny, because grannies are pizza pros.
+Add another helper sprite. The example project uses a granny.
 
 Use your own helper, or save [the granny sprite](images/granny.png) and import it with **Upload**.
 
 ## Step 2
 
-Copy your chef's two scripts onto the new sprite: drag each script from the code area and drop it onto the granny in the sprite list.
+Resize the helper and drag it into a clear position. The example granny is `30`% size and sits below the chef on the right.
 
---- no-print ---
+## Step 3
 
-![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
+Add the `Collect`{:class="block3sound"} sound to the second helper.
 
---- /no-print ---
-
-You'll change the copied scripts to use the granny's own numbers next.
+You'll make and initialize this helper's variables before adding any scripts to it.

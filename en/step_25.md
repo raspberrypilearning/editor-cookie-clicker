@@ -1,32 +1,34 @@
-## Give the grannies a price
+## Count both helpers
 
-Set the granny's starting values so the game runs from the first click.
+Make each granny add five pizzas per second, then test the complete helper system.
 
 ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 
-You're still working on the `Stage`{:class="block3looks"}.
+## Step 1
 
-Give the new variables their starting values on the green flag.
+On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
 
-A granny starts at `100` pizzas, pricier than a chef because she works harder.
+The first helpers each add one pizza per second. Multiply only `grannies`{:class="block3variables"} by `5`.
 
 ```blocks3
-when green flag clicked
-set [pizzas v] to (0)
-set [pizzas per click v] to (1)
-set [chefs v] to (0)
-set [chef price v] to (15)
-+set [grannies v] to (0)
-+set [granny price v] to (100)
-update pizzas per second
-forever
-wait (1) seconds
-change [pizzas v] by (pizzas per second)
-end
+define update pizzas per second
++set [pizzas per second v] to ((helpers) + ((grannies) * (5)))
 ```
 
-## Now run your code
+## Step 2
 
-Buy chefs, then save for a granny and watch your pizzas-per-second jump.
+Click the green flag. Check that both helper counts start at `0`, the first helper costs `50`, the granny costs `100`, and `pizzas per second`{:class="block3variables"} starts at `0`.
 
-You now have a full endless clicker: clicks, upgrades, and helpers all working together.
+Earn 50 pizzas and buy the first helper. Its count becomes `1`, its next price becomes `58`, and the earning rate becomes `1`.
+
+## Step 3
+
+Earn 100 pizzas and buy the granny. Its count becomes `1`, its next price becomes `115`, and `pizzas per second`{:class="block3variables"} becomes `6`.
+
+Stop clicking and check that the score rises by six each second.
+
+## Tip
+
+Choosing costs and rewards so each upgrade feels worthwhile is called **game balancing**.
+
+You now have the clicker's **core loop**: click, earn, buy upgrades, and earn faster.

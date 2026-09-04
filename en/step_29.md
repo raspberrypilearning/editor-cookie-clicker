@@ -1,37 +1,37 @@
-## Animate the auto-clickers
+## Animate the helpers
 
-Give your helpers a gentle pulse so they look busy at work.
+Give the helpers a gentle pulse so they look busy at work.
 
-![The pizza shop's robot chef.](images/chef.png)
+![The example project's robot chef.](images/chef.png)
 
 ## Step 1
 
-Add this script to your first helper.
-
-It grows the sprite a little, then shrinks it back, over and over.
+Add this script to your first helper. It grows the sprite a little, then shrinks it back.
 
 ```blocks3
 when green flag clicked
 forever
 repeat (5)
-  change size by (2)
-  wait (0.05) seconds
-end
-repeat (5) times
+change size by (2)
 wait (0.05) seconds
+end
+repeat (5)
 change size by (-2)
+wait (0.05) seconds
 end
 end
 ```
 
 ## Step 2
 
-Add the same script to your other helper by dragging it onto them in the sprite list.
+Drag the script onto your other helper to copy it.
+
+## Tip
+
+Small animations that make a game feel lively without changing its rules are part of **game feel**, sometimes called **juice**.
 
 ## Now run your code
 
-Click the green flag.
+Click the green flag. Each helper grows by 10 in total, shrinks by 10, and returns to its starting size before the next pulse.
 
-Your helpers pulse away while they make pizzas.
-
-Your pizza shop is complete.
+Leave the game running and check that the helpers keep pulsing while the score still rises every second. Remember to save your project.

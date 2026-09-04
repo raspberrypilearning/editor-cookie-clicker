@@ -1,21 +1,21 @@
-## Make the helper variables
+## Add a helper
 
-The chef needs a few numbers to keep track of.
+Add a helper that will make pizzas even when the player stops clicking.
 
-![The pizza shop's robot chef.](images/chef.png)
+![The example project's robot chef.](images/chef.png)
 
 ## Step 1
 
-Make a variable called `chefs`{:class="block3variables"} for how many helpers you've hired, and tick it so the player can see it.
+Add a character or machine that looks like it could work automatically. The example project uses a robot chef.
+
+Use your own helper, or save [the chef sprite](images/chef.png) and import it with **Upload**.
 
 ## Step 2
 
-Make a variable called `chef price`{:class="block3variables"} for how many pizzas the next helper costs.
-
-This climbs each time, so helpers get pricier.
+Resize the helper and drag it to a clear part of the Stage where it will not cover the score or equipment. The example chef is `30`% size and sits on the right.
 
 ## Step 3
 
-Make a variable called `pizzas per second`{:class="block3variables"} for how many pizzas your helpers make each second, and tick it.
+Add the `Clang`{:class="block3sound"} sound to the helper sprite.
 
-You'll put these to work as you wire up the chef next.
+You'll give the helper some variables next.

@@ -2,9 +2,9 @@
 
 Make each click use your new number instead of a fixed `1`.
 
-![the pizza sprite](images/pizza.png)
+![The example project's pizza sprite.](images/pizza.png)
 
-On your pizza sprite, change the click script to add `pizzas per click`{:class="block3variables"} instead.
+On your main clicker sprite, change the click script to add `pizzas per click`{:class="block3variables"}.
 
 ```blocks3
 when this sprite clicked
@@ -15,6 +15,4 @@ wait (0.05) seconds
 change size by (-10)
 ```
 
-Nothing changes yet, because `pizzas per click`{:class="block3variables"} is still `1`.
-
-The equipment you add next will raise it.
+Nothing changes yet, because `pizzas per click`{:class="block3variables"} is still `1`. The equipment you add next will raise it.

@@ -1,18 +1,27 @@
-# default-project-template
+# Pizza party
 
-![default-project-template](banner.png)
+![Pizza party](banner.png)
 
-Find the project online at [projects.raspberrypi.org/en/projects/default-project-template](https://projects.raspberrypi.org/en/projects/default-project-template)
+Make a pizza-clicker game in this Code Club arcade project. Players click to earn pizzas, buy equipment that improves every click, and hire helpers that make pizzas automatically.
 
-## Resources
-For project materials and solutions, see [en/resources](https://github.com/raspberrypilearning/default-project-template/tree/master/en/resources) and [en/solutions](https://github.com/raspberrypilearning/default-project-template/tree/master/en/solutions).
+The project is written as a granular Raspberry Pi Code Editor tutorial, with a starter Scratch project, a completed project, learner-facing images, and 30 short steps.
+
+## Project files
+
+- The English tutorial starts at [en/landing.md](en/landing.md).
+- Project metadata and step order are defined in [en/meta.yml](en/meta.yml).
+- Starter and completed Scratch projects are in [en/code](en/code).
+- Printable resources are in [en/resources](en/resources).
+- The completed learner solution is in [en/solutions](en/solutions).
 
 ## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licence
-See [LICENCE.md](LICENCE.md)
 
-## Setting up a Crowdin project
+See [LICENCE.md](LICENCE.md).
 
-See [CROWDIN.md](CROWDIN.md).
+## Translations
+
+See [CROWDIN.md](CROWDIN.md) for Crowdin setup and translation guidance.

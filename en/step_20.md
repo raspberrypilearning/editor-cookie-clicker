@@ -1,28 +1,45 @@
 ## Start the clock
 
-Set the helpers' numbers and add their pizzas every second.
+Recount the earning rate after every purchase, then add that many pizzas every second.
 
-![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
+## Step 1
 
-You're still working on the `Stage`{:class="block3looks"}.
+Return to the helper sprite. Broadcast `update`{:class="block3events"} at the end of its buy script.
 
-Update the green flag script to set the new variables, work out the rate once, then add the pizzas-per-second every second.
+```blocks3
+when this sprite clicked
+if <(pizzas) > ((helper price) - (1))> then
+start sound (Clang v)
+change [pizzas v] by ((0) - (helper price))
+change [helpers v] by (1)
+set [helper price v] to (round ((helper price) * (1.15)))
++broadcast (update v)
+end
+```
+
+## Step 2
+
+On the `Stage`{:class="block3looks"}, replace the fixed `pizzas per second`{:class="block3variables"} setup with your custom block. Then add the game's clock.
 
 ```blocks3
 when green flag clicked
 set [pizzas v] to (0)
 set [pizzas per click v] to (1)
-+set [chefs v] to (0)
-+set [chef price v] to (15)
-+update pizzas per second
+set [helpers v] to (0)
+set [helper price v] to (50)
++update pizzas per second :: custom
 +forever
 wait (1) seconds
 change [pizzas v] by (pizzas per second)
 end
 ```
 
+## Tip
+
+A regular moment when a game updates its numbers is called a **tick**. This clicker has one tick every second.
+
 ## Now run your code
 
-Buy a chef, then stop clicking.
+Earn 50 pizzas and buy one helper. Check that `pizzas per second`{:class="block3variables"} becomes `1`, then stop clicking. The score rises by one every second.
 
-Your `pizzas`{:class="block3variables"} keep rising on their own.
+The helper is a repeatable upgrade. When the score reaches its new price, the same sprite appears again so the player can hire another one.

@@ -1,22 +1,42 @@
-## Win only when fully equipped
+## Add the oven
 
-Make winning need all the upgrades, not just a high score.
+Add one more equipment upgrade.
 
-![the pizza sprite](images/pizza.png)
+![The example project's oven.](images/oven.png)
 
-On your pizza, update the `wait until`{:class="block3control"} so the player needs a high score **and** all the equipment (which lands `pizzas per click`{:class="block3variables"} on `24`).
+## Step 1
+
+Add an oven, or another piece of equipment, as a new sprite. Resize it and place it beside your other upgrades. The example oven is `17`% size.
+
+Duplicate its costume and add a green tick to the second costume.
+
+## Step 2
+
+Copy the rolling pin's scripts onto the oven and add the same two sounds.
+
+Update the scripts so the oven costs `3000` and adds `18` to `pizzas per click`{:class="block3variables"}. After buying the other two upgrades, this brings the total to `24`.
 
 ```blocks3
 when green flag clicked
 set drag mode [not draggable v]
-+wait until <<(pizzas) > (10000)> and <(pizzas per click) = (24)>>
-start sound (Win v)
-say [You Win!] for (2) seconds
-stop [all v]
+switch costume to (oven v)
+hide
+wait until <(pizzas) > (2999)>
+show
+start sound (Alert v)
+say [New equipment unlocked!] for (2) seconds
+```
+
+```blocks3
+when this sprite clicked
+if <<(costume [number v]) = (1)> and <(pizzas) > (2999)>> then
+start sound (Tada v)
+change [pizzas v] by (-3000)
+change [pizzas per click v] by (18)
+next costume
+end
 ```
 
 ## Now run your code
 
-Buy all three pieces of equipment and pass 10,000 pizzas.
-
-The win message only appears once your shop is fully kitted out.
+Reach 3000 pizzas and buy the oven. Its green-tick costume appears and 3000 pizzas are spent.

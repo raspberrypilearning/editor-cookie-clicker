@@ -8,11 +8,11 @@ Set up the number that decides how much each click is worth.
 
 Make a variable called `pizzas per click`{:class="block3variables"}.
 
-This is how many pizzas one click makes.
+If you gave your score a different name, use a matching name such as `coins per click`{:class="block3variables"}.
 
 ## Step 2
 
-Click the `Stage`{:class="block3looks"} and set it to `1` on the green flag, so a click always makes at least one pizza.
+Click the `Stage`{:class="block3looks"} and set the new variable to `1` on the green flag, so each click always adds at least one.
 
 ```blocks3
 when green flag clicked
@@ -24,6 +24,4 @@ set [pizzas v] to (0)
 
 All the changing information a game remembers, like scores, prices, and upgrades, is called the **game state**.
 
-Nothing changes in the game yet.
-
-You'll put this number to work on your pizza next.
+Nothing changes yet. You'll put this number to work next.

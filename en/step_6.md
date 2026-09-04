@@ -13,6 +13,4 @@ set [pizzas v] to (0)
 
 ## Now run your code
 
-Click the green flag.
-
-Your score starts at 0 and climbs with each click.
+Click the green flag. Your score starts at `0` and climbs with each click.

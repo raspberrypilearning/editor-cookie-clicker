@@ -1,14 +1,14 @@
 ## Set up winning
 
-Lock the pizza in place, then decide when the player has won.
+Lock the clicker in place, then decide when the player has won.
 
-![the pizza sprite](images/pizza.png)
+![The example project's pizza sprite.](images/pizza.png)
 
 ## Step 1
 
-Start a new script.
+Add the `Win`{:class="block3sound"} sound to your clicker sprite.
 
-On the green flag, set the sprite to `not draggable`{:class="block3sensing"} so the player clicks it instead of accidentally dragging it around the stage.
+Start a new script. On the green flag, set the sprite to `not draggable`{:class="block3sensing"} so the player clicks it instead of accidentally dragging it.
 
 ```blocks3
 when green flag clicked
@@ -17,9 +17,7 @@ set drag mode [not draggable v]
 
 ## Step 2
 
-Add the **win condition** to the same script.
-
-It waits until the score is high enough, then celebrates.
+Add the **win condition** to the same script. It waits until the score is high enough, then celebrates.
 
 ```blocks3
 when green flag clicked
@@ -34,6 +32,4 @@ set drag mode [not draggable v]
 
 A **win condition** is the rule that decides when a player has completed or won a game.
 
-You won't win yet.
-
-That takes 10,000 pizzas, and you'll add faster ways to earn them soon.
+You will add faster ways to reach 10,000 as you build the rest of the game.

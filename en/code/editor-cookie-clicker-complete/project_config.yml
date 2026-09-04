@@ -1,4 +1,4 @@
-name: "editor-cookie-clicker-complete"
+name: "Pizza Party completed"
 identifier: "editor-cookie-clicker-complete"
-type: 'scratch'
-build: true
+type: 'code_editor_scratch'
+build: false

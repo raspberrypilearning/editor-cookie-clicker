@@ -1,15 +1,15 @@
 ## Make the granny variables
 
-The granny needs her own count and price.
+The second helper needs its own count and price.
 
-![The pizza shop's granny.](images/granny.png)
+![The example project's granny.](images/granny.png)
 
 ## Step 1
 
-Make a variable called `grannies`{:class="block3variables"} for how many you've hired.
+Make a variable called `grannies`{:class="block3variables"} for how many of the second helper the player has hired.
 
 ## Step 2
 
 Make a variable called `granny price`{:class="block3variables"} for how many pizzas the next one costs.
 
-You'll swap these into the copied scripts next.
+You'll give both variables safe starting values before using them in the granny's scripts.

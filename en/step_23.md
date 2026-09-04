@@ -1,38 +1,30 @@
-## Wire up the granny
+## Initialize the granny variables
 
-Point the copied scripts at the granny's own numbers.
+Set the granny count and price before the sprite can be clicked or shown.
 
-![The pizza shop's granny.](images/granny.png)
+![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 
-## Step 1
+Click the `Stage`{:class="block3looks"} and add both values to the green-flag script.
 
-In the copied buy script, swap the chef variables for the granny ones and pick a different sound.
-
-```blocks3
-when this sprite clicked
-start sound (Collect v)
-change [pizzas v] by ((0) - (granny price))
-change [grannies v] by (1)
-set [granny price v] to (round ((granny price) * (1.15)))
-```
-
-## Step 2
-
-Swap the variables in the copied appear script too.
+The second helper starts at `100` pizzas because it works five times faster than the first helper.
 
 ```blocks3
 when green flag clicked
-set drag mode [not draggable v]
+set [pizzas v] to (0)
+set [pizzas per click v] to (1)
+set [helpers v] to (0)
+set [helper price v] to (50)
++set [grannies v] to (0)
++set [granny price v] to (100)
+update pizzas per second :: custom
 forever
-if <(pizzas) > ((granny price) - (1))> then
-show
-else
-hide
-end
-broadcast (update v)
+wait (1) seconds
+change [pizzas v] by (pizzas per second)
 end
 ```
 
-The granny won't add anything yet.
+## Now run your code
 
-You'll make her count towards your pizzas-per-second next.
+Click the green flag. The new readouts show `grannies 0` and `granny price 100`.
+
+The second helper cannot be free when you add its scripts next.

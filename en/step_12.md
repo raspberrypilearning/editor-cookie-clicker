@@ -1,62 +1,50 @@
-## Add more equipment
+## Add the rolling pin
 
-Two more pieces let the player keep upgrading.
+Build on the cutter prototype with another upgrade.
 
-![The pizza shop's rolling pin.](images/rolling_pin.png)
-
-Copy the two cutter scripts by dragging each onto the new sprite in the sprite list, then change the numbers.
-
---- no-print ---
-
-![Dragging a script onto another sprite in the sprite list to copy it.](images/drag-script-to-sprite.gif)
-
---- /no-print ---
+![The example project's rolling pin.](images/rolling_pin.png)
 
 ## Step 1
 
-Add the rolling pin.
+Add a rolling pin, or another piece of equipment, as a new sprite. Resize it and place it beside the cutter. The example rolling pin is `30`% size.
 
-It appears above `499` pizzas and sets `pizzas per click`{:class="block3variables"} to `6`.
+Duplicate its costume and add a green tick to the second costume, just as you did for the cutter.
 
-Save [the rolling pin sprite](images/rolling_pin.png) and import it with **Upload** if you want to use the pizza shop's equipment.
+## Step 2
+
+Copy both cutter scripts onto the rolling pin by dragging each script onto the rolling pin in the sprite list. Add the `Alert`{:class="block3sound"} and `Tada`{:class="block3sound"} sounds too.
+
+--- no-print ---
+
+![Copying the cutter scripts onto the rolling pin and oven sprites.](images/copy-equipment-scripts.gif)
+
+--- /no-print ---
+
+## Step 3
+
+Update the copied scripts. The rolling pin costs `500` and adds `4` to `pizzas per click`{:class="block3variables"}. If the cutter was bought first, each click is now worth `6`.
 
 ```blocks3
 when green flag clicked
 set drag mode [not draggable v]
 switch costume to (rolling_pin v)
-forever
-if <(pizzas) > (499)> then
-start sound (Alert v)
-show
-else
 hide
-end
-end
+wait until <(pizzas) > (499)>
+show
+start sound (Alert v)
+say [New equipment unlocked!] for (2) seconds
 ```
 
 ```blocks3
 when this sprite clicked
+if <<(costume [number v]) = (1)> and <(pizzas) > (499)>> then
 start sound (Tada v)
-set [pizzas per click v] to (6)
+change [pizzas v] by (-500)
+change [pizzas per click v] by (4)
 next costume
-stop [other scripts in sprite v]
-stop [this script v]
+end
 ```
-
-## Step 2
-
-Add the oven the same way.
-
-It appears above `3000` pizzas and sets `pizzas per click`{:class="block3variables"} to `24`.
-
-Give each sprite its own first costume in its "appear" script.
-
-Save [the oven sprite](images/oven.png) and import it with **Upload** if you want to use the pizza shop's equipment.
-
-![The pizza shop's oven.](images/oven.png)
 
 ## Now run your code
 
-Play until you can buy the rolling pin and the oven.
-
-Each one makes your clicks worth even more.
+Reach 500 pizzas and buy the rolling pin. Its green-tick costume appears and 500 pizzas are spent.

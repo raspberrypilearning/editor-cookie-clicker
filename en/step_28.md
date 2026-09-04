@@ -1,14 +1,12 @@
 ## Animate the equipment
 
-Make your equipment wiggle so the shop feels alive.
+Make the equipment wiggle so the shop feels alive.
 
-![The pizza shop's cutter.](images/cutter.png)
+![The example project's cutter.](images/cutter.png)
 
 ## Step 1
 
-Add this script to your first piece of equipment.
-
-It rocks the sprite back and forth forever.
+Add this script to your first piece of equipment. It rocks the sprite back and forth forever.
 
 ```blocks3
 when green flag clicked
@@ -26,10 +24,8 @@ end
 
 ## Step 2
 
-Add the same script to your other equipment sprites by dragging it onto each one in the sprite list.
+Drag the script onto your other equipment sprites to copy it to each one.
 
 ## Now run your code
 
-Click the green flag.
-
-Your equipment rocks gently from side to side.
+Click the green flag. Each equipment sprite rocks gently and returns to its starting direction after every wiggle.

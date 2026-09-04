@@ -1,96 +1,59 @@
-# Project Structure
+# Pizza party project structure
 
-This repository is used to build CCP projects. Below is the directory structure and a description of what each folder and file is used for.
+This directory contains the English Raspberry Pi Code Editor version of **Pizza party**, a Scratch pizza-clicker game for the Code Club arcade.
 
 ```plaintext
 en/
 ├── code/
-│   ├── project-name-complete/
-│   │   ├── main.py
+│   ├── editor-cookie-clicker-complete/
+│   │   ├── editor-cookie-clicker-complete.sb3
 │   │   └── project_config.yml
-│   └── project-name-starter/
-│       ├── main.py
+│   └── editor-cookie-clicker-starter/
+│       ├── editor-cookie-clicker-starter.sb3
 │       └── project_config.yml
 ├── images/
-│   └── .keep
+│   ├── banner.png
+│   └── tutorial images and animations
 ├── resources/
-│   └── .keep
+│   └── pizza-party.pdf
 ├── solutions/
-│   └── .keep
-├── README.md
+│   └── Pizza Party _ Endless Clicker.sb3
+├── landing.md
 ├── meta.yml
 ├── step_1.md
-├── step_2.md
-└── step_3.md
+├── ...
+└── step_30.md
 ```
 
-## Directory and File Descriptions
+## `code/`
 
-### `code/`
-Contains Python or HTML code used in the Raspberry Pi Code Editor.  
-- Each project must be in its own subdirectory. Directory names should be descriptive but are otherwise flexible.  
-- Inside each subdirectory:  
-  - `main.py` (for Python projects) or `index.html` (for HTML projects)  
-  - `project_config.yml` containing:  
-    - `name`: The project name  
-    - `identifier`: A unique identifier for the project
-    - `type`: 'python' or 'html'  
-    - `build`: `false` by default; set to `true` for the editor project to be built  
+The two subdirectories contain Scratch 3 (`.sb3`) projects and their Code Editor configuration.
 
-### `images/`
-Stores all images for the project.  
-- Must contain a `banner.png` (the project’s hero image).  
-- Edited images should be accompanied by their original versions.  
-- Additional supporting images should be sensibly named.  
+- `editor-cookie-clicker-starter` is the clean learner starting point. Its config uses the identifier `editor-cookie-clicker-starter`, the type `code_editor_scratch`, and `build: true`.
+- `editor-cookie-clicker-complete` contains the finished game. Its config uses the identifier `editor-cookie-clicker-complete`, the type `code_editor_scratch`, and `build: false`.
 
-### `resources/`
-Contains supporting resources for the project.  
-- Must include the PDF version of the project, clearly named.  
-- Other resources such as offline starter projects, assets, or supporting files can also go here.  
-- Learners can download a `.zip` of this folder via:  
-  `https://rpf.io/p/en/project-slug-go`
+The completed archive implements the scripts shown in the tutorial, including guarded equipment and helper purchases, order-independent equipment boosts, helper-rate updates, and the final win condition.
 
-### `solutions/`
-Contains the final completed version of the project, if needed.  
-- Learners can download this via:  
-  `https://rpf.io/p/en/project-slug-get`
+## `images/`
 
-### `meta.yml`
-Defines project metadata used for publishing. Example fields:  
-```yaml
-title: Project title in sentence case
-hero_image: images/banner.png
-description: A short description of the project
-listed: false
-pdf: false
-steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged
-  - title: Step title
-    completion:
-      - internal      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
+This directory contains the hero image, downloadable sprites, screenshots, and animations used by the tutorial. Learner-facing Markdown uses raster PNG or GIF images. `backdrop1.svg` is retained as a downloadable Scratch project asset rather than embedded in a tutorial page.
+
+## `resources/`
+
+`pizza-party.pdf` is the printable project resource.
+
+## `solutions/`
+
+`Pizza Party _ Endless Clicker.sb3` is the completed learner solution and matches the completed project in `code/`.
+
+## Tutorial files
+
+- `landing.md` introduces the project and previews the finished game.
+- `meta.yml` supplies the title, description, hero image, and ordered list of 30 steps.
+- `step_1.md` through `step_30.md` contain the learner instructions. Step 1 marks engagement, step 29 marks completion of the directed build, and step 30 is the final customization challenge.
+
+Scratch scripts use fenced `blocks3` code blocks. Calls to learner-created blocks include the explicit custom-block category override:
+
+```blocks3
+update pizzas per second :: custom
 ```
-
-- **`listed`**:  
-  - `true`: project is published from the master branch  
-  - `false`: project is not publicly listed (but still accessible via slug URL)  
-- **`pdf`**: Path to a PDF in `resources/`, making it downloadable  
-- **`completion`**: Metrics for learner progress  
-  - `engaged`: Learner has reached the first "making" step  
-  - `internal`: Final "making" step of the project  
-  - `external`: Last step of the project, often a challenge  
-- **Challenges**: Optional, provide extra tasks and count as `external` completion steps  
-
-### `README.md`
-Documentation for the project, including the structure and explanation of contents.
-
-### `step_1.md`, `step_2.md`, `step_3.md`
-Markdown files containing step-by-step instructions for learners.  
-- Each step corresponds to a tutorial section.  
-- The number of steps varies by project.  

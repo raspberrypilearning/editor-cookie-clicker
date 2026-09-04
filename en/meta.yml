@@ -1,42 +1,43 @@
-title: Pizza Shop
+title: Pizza party
 hero_image: images/banner.png
-description: Build your own endless clicker game. Click to make pizzas, buy equipment so
-  every click is worth more, and hire helpers who keep cooking for you.
-listed: false
+description: Make a pizza-clicker game in this Code Club arcade project.
+listed: true
 pdf: false
 steps:
   - title: Make the clicker
-  - title: Count your clicks
     completion:
       - engaged
+  - title: Count your clicks
   - title: Add a click sound
-  - title: Make the pizza bounce
+  - title: Make the clicker bounce
   - title: Set up winning
   - title: Reset the score
   - title: Make every click worth more
   - title: Spend the multiplier
   - title: Add your first equipment
-  - title: Show the cutter when affordable
+  - title: Unlock the cutter
   - title: Buy the cutter
-  - title: Add more equipment
+  - title: Add the rolling pin
+  - title: Add the oven
   - title: Win only when fully equipped
-  - title: Hire a robot chef
+  - title: Add a helper
   - title: Make the helper variables
-  - title: Buy a chef
-  - title: Show the chef when affordable
+  - title: Buy a helper
+  - title: Show the helper when affordable
   - title: Count the pizzas per second
-  - title: Ask for a recount
   - title: Start the clock
   - title: Add a second helper
   - title: Make the granny variables
+  - title: Initialize the granny variables
   - title: Wire up the granny
-  - title: Make grannies worth more
-  - title: Give the grannies a price
-    completion:
-      - internal
+  - title: Count both helpers
   - title: Paint a shop backdrop
   - title: Arrange your shop
+  - title: Animate the equipment
+  - title: Animate the helpers
+    completion:
+      - internal
+  - title: Make it your own
+    challenge: true
     completion:
       - external
-  - title: Animate the equipment
-  - title: Animate the auto-clickers

@@ -2,23 +2,28 @@
 
 Let the player click the cutter to upgrade their clicks.
 
-![The pizza shop's cutter.](images/cutter.png)
+![The example project's cutter.](images/cutter.png)
 
-You're still working on the `Cutter`{:class="block3looks"} sprite.
+Add the `Tada`{:class="block3sound"} sound to your equipment sprite.
 
-Clicking it upgrades the player's clicks, switches to the "bought" costume, and shuts itself off so it can't be bought twice.
+Then add a click script that checks the cutter is still unbought and affordable. Buying it spends 25 pizzas, adds `1` to the multiplier, and switches to the bought costume.
 
 ```blocks3
 when this sprite clicked
+if <<(costume [number v]) = (1)> and <(pizzas) > (24)>> then
 start sound (Tada v)
-set [pizzas per click v] to (2)
+change [pizzas v] by (-25)
+change [pizzas per click v] by (1)
 next costume
-stop [other scripts in sprite v]
-stop [this script v]
+end
 ```
+
+The costume check means the plain cutter can be bought once, but its green-tick costume cannot be bought again.
 
 ## Now run your code
 
-Reach 25 pizzas, then click the cutter.
+Reach 25 pizzas, then click the cutter. The cost is deducted and every click is now worth 2 pizzas.
 
-Every click is now worth 2 pizzas.
+## Tip
+
+Game developers often build and test one working **prototype** first. Fixing the cutter before copying its scripts makes problems easier to find.

@@ -1,24 +1,26 @@
-## Count the pizzas per second
+## Show the helper when affordable
 
-Build a reusable block that works out how fast your helpers make pizzas.
+Make the helper appear only when the player can pay the current price.
 
-![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
-
-Click the `Stage`{:class="block3looks"}.
-
-In `My Blocks`{:class="block3custom"} click **Make a Block**, name it `update pizzas per second`, and build its definition.
-
-![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
+![The example project's robot chef.](images/chef.png)
 
 ```blocks3
-define update pizzas per second
-set [pizzas per second v] to ((chefs) * (1))
+when green flag clicked
+set drag mode [not draggable v]
+hide
+forever
+if <(pizzas) > ((helper price) - (1))> then
+show
+else
+hide
+end
+end
 ```
 
 ## Tip
 
-In many programming languages, a reusable block of code like this is called a **function**.
+Scratch has no `greater than or equal to` block. Because the score uses whole numbers, checking for `pizzas > helper price - 1` does the same job.
 
-Nothing runs this block yet.
+## Now run your code
 
-You'll call it from a couple of places next.
+Click the green flag and build your score. The helper stays hidden up to 49 pizzas and appears when the score reaches 50.

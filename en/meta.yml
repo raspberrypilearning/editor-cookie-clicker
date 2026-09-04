@@ -5,9 +5,9 @@ listed: true
 pdf: false
 steps:
   - title: Make the clicker
+  - title: Count your clicks
     completion:
       - engaged
-  - title: Count your clicks
   - title: Add a click sound
   - title: Make the clicker bounce
   - title: Set up winning

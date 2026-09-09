@@ -6,7 +6,9 @@ Click the green flag to start, then click the pizza to earn pizzas. Buy equipmen
 
 --- no-print ---
 
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/editor-cookie-clicker-complete" width="400" height="710" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+<div class="scratch-preview">
+ <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/1361881665/?autostart=false" frameborder="0"></iframe>
+</div>
 
 --- /no-print ---
 

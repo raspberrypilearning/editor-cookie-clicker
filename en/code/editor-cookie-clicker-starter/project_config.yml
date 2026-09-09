@@ -1,4 +1,4 @@
 name: "Pizza Party starter"
 identifier: "editor-cookie-clicker-starter"
-type: 'code_editor_scratch'
+type: 'scratch'
 build: true

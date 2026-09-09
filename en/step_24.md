@@ -2,6 +2,8 @@
 
 Reuse the first helper's scripts, then point them at the granny's sound, count, and price.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's granny.](images/granny.png)
 
 ## Step 1
@@ -45,5 +47,7 @@ hide
 end
 end
 ```
+
+## Now run your code
 
 The granny is safe to buy, but it does not add to the earning rate yet.

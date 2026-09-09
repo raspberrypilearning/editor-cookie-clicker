@@ -3,6 +3,7 @@ hero_image: images/banner.png
 description: Make a pizza-clicker game in this Code Club arcade project.
 listed: true
 pdf: false
+landing: true
 steps:
   - title: Make the clicker
   - title: Count your clicks
@@ -31,13 +32,13 @@ steps:
   - title: Initialize the granny variables
   - title: Wire up the granny
   - title: Count both helpers
+    completion:
+      - internal
   - title: Paint a shop backdrop
   - title: Arrange your shop
   - title: Animate the equipment
   - title: Animate the helpers
     completion:
-      - internal
+      - external
   - title: Make it your own
     challenge: true
-    completion:
-      - external

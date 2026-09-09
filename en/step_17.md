@@ -2,6 +2,8 @@
 
 Let the player click the helper to hire one.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's robot chef.](images/chef.png)
 
 ## Step 1
@@ -38,5 +40,7 @@ end
 ## Tip
 
 A **progression curve** controls how quickly a game gets harder, faster, or more expensive as the player improves.
+
+## Now run your code
 
 The first helper costs 50 pizzas. After buying it, `helpers`{:class="block3variables"} is `1` and `helper price`{:class="block3variables"} is `58`.

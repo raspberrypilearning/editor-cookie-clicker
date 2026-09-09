@@ -2,6 +2,8 @@
 
 Set the granny count and price before the sprite can be clicked or shown.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 
 Click the `Stage`{:class="block3looks"} and add both values to the green-flag script.

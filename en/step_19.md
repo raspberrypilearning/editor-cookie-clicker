@@ -2,6 +2,8 @@
 
 Build a reusable block that works out how fast the helpers make pizzas.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 
 ## Step 1
@@ -31,5 +33,7 @@ update pizzas per second :: custom
 ## Tip
 
 In many programming languages, a reusable block of code like this is called a **function**.
+
+## Now run your code
 
 Nothing calls the block yet. You'll connect it to the helper next.

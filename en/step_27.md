@@ -2,6 +2,8 @@
 
 Lay everything out so the player knows what to click and buy.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ## Step 1
 
 Drag your sprites into place on the Stage.

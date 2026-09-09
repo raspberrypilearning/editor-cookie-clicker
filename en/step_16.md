@@ -2,6 +2,8 @@
 
 The helper needs a few numbers to keep track of.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's robot chef.](images/chef.png)
 
 ## Step 1
@@ -28,5 +30,7 @@ set [pizzas per click v] to (1)
 +set [helper price v] to (50)
 +set [pizzas per second v] to (0)
 ```
+
+## Now run your code
 
 Click the green flag. The new readouts show `helpers 0`, `helper price 50`, and `pizzas per second 0`.

@@ -2,6 +2,8 @@
 
 Add one more equipment upgrade.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's oven.](images/oven.png)
 
 ## Step 1

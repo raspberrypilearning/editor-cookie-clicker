@@ -2,6 +2,8 @@
 
 Make the cutter appear once the player can afford it.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's cutter.](images/cutter.png)
 
 ## Step 1

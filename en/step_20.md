@@ -2,6 +2,8 @@
 
 Recount the earning rate after every purchase, then add that many pizzas every second.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ## Step 1
 
 Return to the helper sprite. Broadcast `update`{:class="block3events"} at the end of its buy script.

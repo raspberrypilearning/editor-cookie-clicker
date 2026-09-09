@@ -2,6 +2,8 @@
 
 Make the helper appear only when the player can pay the current price.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's robot chef.](images/chef.png)
 
 ```blocks3

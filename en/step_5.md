@@ -2,6 +2,8 @@
 
 Lock the clicker in place, then decide when the player has won.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's pizza sprite.](images/pizza.png)
 
 ## Step 1
@@ -31,5 +33,7 @@ set drag mode [not draggable v]
 ## Tip
 
 A **win condition** is the rule that decides when a player has completed or won a game.
+
+## Now run your code
 
 You will add faster ways to reach 10,000 as you build the rest of the game.

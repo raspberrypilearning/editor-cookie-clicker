@@ -2,6 +2,8 @@
 
 Keep score, and make each click add to it.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's pizza sprite.](images/pizza.png)
 
 ## Step 1

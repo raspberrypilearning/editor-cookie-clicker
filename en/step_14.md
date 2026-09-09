@@ -2,6 +2,8 @@
 
 Make winning depend on buying every upgrade, not just reaching a high score.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's pizza sprite.](images/pizza.png)
 
 On your main clicker sprite, update the `wait until`{:class="block3control"} condition.

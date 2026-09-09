@@ -2,6 +2,8 @@
 
 Equipment lets the player upgrade every click.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's cutter.](images/cutter.png)
 
 ## Step 1
@@ -25,5 +27,7 @@ Keep the plain costume first and the copied costume second.
 Change the second costume so it clearly shows the equipment has been bought. The example project adds a green tick.
 
 ![The cutter costume with a green tick added.](images/cutter2.png)
+
+## Now run your code
 
 You'll make the cutter appear when the player can afford it next.

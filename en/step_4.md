@@ -2,6 +2,8 @@
 
 Give your main sprite a bit of life when it is clicked.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's pizza sprite.](images/pizza.png)
 
 Add blocks to make the sprite grow, wait for a moment, and shrink back to its starting size.

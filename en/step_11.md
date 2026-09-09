@@ -2,6 +2,8 @@
 
 Let the player click the cutter to upgrade their clicks.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's cutter.](images/cutter.png)
 
 Add the `Tada`{:class="block3sound"} sound to your equipment sprite.
@@ -20,10 +22,10 @@ end
 
 The costume check means the plain cutter can be bought once, but its green-tick costume cannot be bought again.
 
-## Now run your code
-
-Reach 25 pizzas, then click the cutter. The cost is deducted and every click is now worth 2 pizzas.
-
 ## Tip
 
 Game developers often build and test one working **prototype** first. Fixing the cutter before copying its scripts makes problems easier to find.
+
+## Now run your code
+
+Reach 25 pizzas, then click the cutter. The cost is deducted and every click is now worth 2 pizzas.

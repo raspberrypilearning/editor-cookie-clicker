@@ -2,6 +2,8 @@
 
 Set up the number that decides how much each click is worth.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![Selecting the Stage, to the right of the sprite list.](images/select-stage.png)
 
 ## Step 1
@@ -23,5 +25,7 @@ set [pizzas v] to (0)
 ## Tip
 
 All the changing information a game remembers, like scores, prices, and upgrades, is called the **game state**.
+
+## Now run your code
 
 Nothing changes yet. You'll put this number to work next.

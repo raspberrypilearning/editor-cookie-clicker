@@ -2,6 +2,8 @@
 
 Give the helpers a gentle pulse so they look busy at work.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's robot chef.](images/chef.png)
 
 ## Step 1

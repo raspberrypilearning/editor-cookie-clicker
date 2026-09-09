@@ -2,6 +2,8 @@
 
 Add a helper that will make pizzas even when the player stops clicking.
 
+<h2 class="c-project-heading--explainer">What you need to do</h2>
+
 ![The example project's robot chef.](images/chef.png)
 
 ## Step 1
@@ -17,5 +19,7 @@ Resize the helper and drag it to a clear part of the Stage where it will not cov
 ## Step 3
 
 Add the `Clang`{:class="block3sound"} sound to the helper sprite.
+
+## Now run your code
 
 You'll give the helper some variables next.

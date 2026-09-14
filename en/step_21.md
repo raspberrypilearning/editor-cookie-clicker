@@ -10,7 +10,7 @@ Add a more powerful helper that will make five pizzas per second instead of one.
 
 Add another helper sprite. The example project uses a granny.
 
-Use your own helper, or save [the granny sprite](images/granny.png) and import it with **Upload**.
+Use your own helper, or save [the granny sprite](images/granny-sprite.png) and import it with **Upload**.
 
 ## Step 2
 

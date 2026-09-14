@@ -18,7 +18,7 @@ Add your own sprite with **Choose a Sprite** — use the library, **Upload**, or
 
 Choose food, treasure, a mascot, a ball, or something you draw yourself. The example project uses a pizza.
 
-Use your own sprite, or save [the pizza sprite](images/pizza.png) and import it with **Upload**.
+Use your own sprite, or save [the pizza sprite](images/pizza-sprite.png) and import it with **Upload**.
 
 ![The Choose a Sprite button in the bottom-right of the Scratch editor.](images/sprite-choose.png)
 

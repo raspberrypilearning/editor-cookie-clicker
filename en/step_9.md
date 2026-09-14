@@ -10,7 +10,7 @@ Equipment lets the player upgrade every click.
 
 Add a new sprite that looks like it could improve each click. The example project uses a cutter.
 
-Use your own equipment, or save [the cutter sprite](images/cutter.png) and import it with **Upload**.
+Use your own equipment, or save [the cutter sprite](images/cutter-sprite.png) and import it with **Upload**.
 
 Resize it and drag it near the bottom of the Stage, leaving room for two more equipment sprites. The example cutter is `30`% size.
 

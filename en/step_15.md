@@ -10,7 +10,7 @@ Add a helper that will make pizzas even when the player stops clicking.
 
 Add a character or machine that looks like it could work automatically. The example project uses a robot chef.
 
-Use your own helper, or save [the chef sprite](images/chef.png) and import it with **Upload**.
+Use your own helper, or save [the chef sprite](images/chef-sprite.png) and import it with **Upload**.
 
 ## Step 2
 

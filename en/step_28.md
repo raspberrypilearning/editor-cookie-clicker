@@ -8,19 +8,20 @@ Make the equipment wiggle so the shop feels alive.
 
 ## Step 1
 
-Add this script to your first piece of equipment. It rocks the sprite back and forth forever.
+Add this script to your first piece of equipment. The `point in direction`{:class="block3motion"} block starts it level each time you click the green flag, then it rocks back and forth forever.
 
 ```blocks3
 when green flag clicked
+point in direction (90)
 forever
 turn right (10) degrees
-wait (0.05) seconds
+wait (0.2) seconds
 turn left (10) degrees
-wait (0.05) seconds
+wait (0.2) seconds
 turn left (10) degrees
-wait (0.05) seconds
+wait (0.2) seconds
 turn right (10) degrees
-wait (0.05) seconds
+wait (0.2) seconds
 end
 ```
 

@@ -10,11 +10,11 @@ Return to the helper sprite. Broadcast `update`{:class="block3events"} at the en
 
 ```blocks3
 when this sprite clicked
-if <(pizzas) > ((helper price) - (1))> then
+if <(pizzas) > ((chef price) - (1))> then
 start sound (Clang v)
-change [pizzas v] by ((0) - (helper price))
-change [helpers v] by (1)
-set [helper price v] to (round ((helper price) * (1.15)))
+change [pizzas v] by ((0) - (chef price))
+change [chefs v] by (1)
+set [chef price v] to (round ((chef price) * (1.15)))
 +broadcast (update v)
 end
 ```
@@ -27,8 +27,8 @@ On the `Stage`{:class="block3looks"}, replace the fixed `pizzas per second`{:cla
 when green flag clicked
 set [pizzas v] to (0)
 set [pizzas per click v] to (1)
-set [helpers v] to (0)
-set [helper price v] to (50)
+set [chefs v] to (0)
+set [chef price v] to (50)
 +update pizzas per second :: custom
 +forever
 wait (1) seconds

@@ -12,13 +12,13 @@ Click the `Stage`{:class="block3looks"}.
 
 In `My Blocks`{:class="block3custom"}, click **Make a Block**, name it `update pizzas per second`{:class="block3custom"}, and build its definition.
 
-Each helper makes one pizza per second, so the rate is the same as `helpers`{:class="block3variables"}.
+Each chef makes one pizza per second, so the rate is the same as `chefs`{:class="block3variables"}.
 
 ![The Make a Block button in the My Blocks palette.](images/make-a-block.png)
 
 ```blocks3
 define update pizzas per second
-set [pizzas per second v] to (helpers)
+set [pizzas per second v] to (chefs)
 ```
 
 ## Step 2

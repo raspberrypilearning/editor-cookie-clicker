@@ -18,7 +18,7 @@ Copy both cutter scripts onto the rolling pin by dragging each script onto the r
 
 --- no-print ---
 
-![Copying the cutter scripts onto the rolling pin and oven sprites.](images/copy-equipment-scripts.gif)
+![Dragging scripts from the code area onto another sprite to copy them.](images/copy-equipment-scripts.gif)
 
 --- /no-print ---
 

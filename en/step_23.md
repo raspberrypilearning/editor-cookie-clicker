@@ -14,8 +14,8 @@ The second helper starts at `100` pizzas because it works five times faster than
 when green flag clicked
 set [pizzas v] to (0)
 set [pizzas per click v] to (1)
-set [helpers v] to (0)
-set [helper price v] to (50)
+set [chefs v] to (0)
+set [chef price v] to (50)
 +set [grannies v] to (0)
 +set [granny price v] to (100)
 update pizzas per second :: custom

@@ -8,11 +8,11 @@ Make each granny add five pizzas per second, then test the complete helper syste
 
 On the `Stage`{:class="block3looks"}, update the `update pizzas per second`{:class="block3custom"} definition.
 
-The first helpers each add one pizza per second. Multiply only `grannies`{:class="block3variables"} by `5`.
+Chefs each add one pizza per second. Multiply only `grannies`{:class="block3variables"} by `5`.
 
 ```blocks3
 define update pizzas per second
-+set [pizzas per second v] to ((helpers) + ((grannies) * (5)))
++set [pizzas per second v] to ((chefs) + ((grannies) * (5)))
 ```
 
 ## Tip

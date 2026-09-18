@@ -11,7 +11,7 @@ when green flag clicked
 set drag mode [not draggable v]
 hide
 forever
-if <(pizzas) > ((helper price) - (1))> then
+if <(pizzas) > ((chef price) - (1))> then
 show
 else
 hide
@@ -21,7 +21,7 @@ end
 
 ## Tip
 
-Scratch has no `greater than or equal to` block. Because the score uses whole numbers, checking for `pizzas > helper price - 1` does the same job.
+Scratch has no `greater than or equal to` block. Because the score uses whole numbers, checking for `pizzas > chef price - 1` does the same job.
 
 ## Now run your code
 

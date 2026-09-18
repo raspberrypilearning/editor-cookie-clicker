@@ -22,7 +22,7 @@ steps:
   - title: Add the oven
   - title: Win only when fully equipped
   - title: Add a helper
-  - title: Make the helper variables
+  - title: Make the chef variables
   - title: Buy a helper
   - title: Show the helper when affordable
   - title: Count the pizzas per second

@@ -10,16 +10,16 @@ Let the player click the helper to hire one.
 
 Clicking the helper first checks the player can still afford it, then spends its current price and increases the number hired.
 
-The `change`{:class="block3variables"} block needs a negative number to spend pizzas. `0 - helper price` turns the price into that negative number.
+The `change`{:class="block3variables"} block needs a negative number to spend pizzas. `0 - chef price` turns the price into that negative number.
 
 The affordability check also stops rapid repeat clicks from pushing the score below zero while the sprite is waiting to hide.
 
 ```blocks3
 when this sprite clicked
-if <(pizzas) > ((helper price) - (1))> then
+if <(pizzas) > ((chef price) - (1))> then
 start sound (Clang v)
-change [pizzas v] by ((0) - (helper price))
-change [helpers v] by (1)
+change [pizzas v] by ((0) - (chef price))
+change [chefs v] by (1)
 end
 ```
 
@@ -29,11 +29,11 @@ Make the next helper cost about 15% more. `round`{:class="block3operators"} keep
 
 ```blocks3
 when this sprite clicked
-if <(pizzas) > ((helper price) - (1))> then
+if <(pizzas) > ((chef price) - (1))> then
 start sound (Clang v)
-change [pizzas v] by ((0) - (helper price))
-change [helpers v] by (1)
-+set [helper price v] to (round ((helper price) * (1.15)))
+change [pizzas v] by ((0) - (chef price))
+change [chefs v] by (1)
++set [chef price v] to (round ((chef price) * (1.15)))
 end
 ```
 
@@ -43,4 +43,4 @@ A **progression curve** controls how quickly a game gets harder, faster, or more
 
 ## Now run your code
 
-The first helper costs 50 pizzas. After buying it, `helpers`{:class="block3variables"} is `1` and `helper price`{:class="block3variables"} is `58`.
+The first helper costs 50 pizzas. After buying it, `chefs`{:class="block3variables"} is `1` and `chef price`{:class="block3variables"} is `58`.
